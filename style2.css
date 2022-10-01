@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Chalet';
+    src: url('FONTS/16762.ttf');
+}
+img{
+    display: block;
+}
+
+body{
+    display: flex;
+    background-color: #0F0F0F;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Chalet';
+    margin: 0;
+}
+.header{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0px 0px 10px black;
+    z-index: 10;
+}
+.header img{
+    width: 80vw;
+}
+.games{
+    background-color: #212121;
+    padding: 0 80px;
+    width: 50%;
+}
+.order{
+    padding: 40px 0;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.a{
+    color: var(--acolor);
+    border-bottom: 3px solid var(--acolor);
+    width: 30px;
+    text-align: center;
+    margin: 3px 1px;
+}
+.b{
+    color: var(--bcolor);
+    border-bottom: 3px solid var(--bcolor);
+    width: 30px;
+    text-align: center;
+    margin: 3px 1px;
+}
+#a{
+    border-bottom: 4px solid var(--acolor);
+}
+#b{
+    border-bottom: 4px solid var(--bcolor);
+}
+.slot{
+    width: 20vw;
+}
+.slots{
+    display: flex;
+    justify-content: space-evenly;
+}
+.slot img{
+    width: 20vw;
+}
+ul{
+    padding: 0;
+    padding-left: 15px;
+}
+li{
+    color: #6a6a6a;
+    padding-left: 5px;
+}
+li::marker{
+    content: '►';
+}
+
+
+.complete{
+	color: lime;
+	display: none;
+}
+.complete:after{
+	content: url("complite.png");
+	padding-left: 5px;
+}
+
+.wait{
+	color: #FCE883;
+}
+.soon:after{
+	content: url(timer.png);
+	margin-left: 5px;
+}
+.play:after{
+	content: url("wantToPlay.png");
+	margin-left: 5px;
+}
+.card::after{
+	content: url('card.png');
+	margin-left: 5px;
+}
+
+.bad {
+	color: #EE204D;
+	text-decoration: line-through;
+	display: none;
+}
+
+.watching{
+	color: #3271E5;
+}
+.watching:after{
+	content: url('process.png');
+	padding-left: 5px;
+}
