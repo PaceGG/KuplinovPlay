@@ -1,0 +1,123 @@
+/* @font-face {
+	font-family: 'aral';
+	src: url('fonts/16762.eot');
+	src: local('☺'), url('fonts/16762.woff') format('woff'), url('../fonts/16762.ttf') format('truetype'), url('../fonts/16762.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Chalet';
+	src: url('FONTS/16762.woff');
+}
+
+body{
+	background-color: #222;
+	color: #ddd;
+	font-family: 'Chalet';
+}
+
+h1{
+ 	color: #924ADC;
+ 	font-size: 30px;
+ 	text-align: center;
+ 	padding: 0px;
+ 	background-color: #151515;
+	border: 2px solid #1D1D1D;
+	padding-top: 15px;
+	padding-bottom:15px;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+.games{
+	text-align: left;
+	background-color: #202020;
+	margin-left: 400px;
+	margin-right: 400px;
+	border: 2px solid #1A1A1A;
+	border-radius: 10px;
+}
+
+.slots{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.slot{
+	/* width: 500px; */
+	margin: 0px 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.slot img{
+	border: 5px solid white;
+	width: 400px;
+}
+
+.order{
+	text-align: center;
+	margin: 10px;
+	line-height: 33px;
+}
+
+li{
+	padding: 5px;
+    color: #888888;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+.complete{
+	color: lime;
+	display: none;
+}
+
+.complete:after{
+	content: url("complite.png");
+	padding-left: 5px;
+}
+
+.wait{
+	color: #FCE883;
+}
+
+.soon:after{
+	content: url(timer.png);
+	margin-left: 5px;
+}
+
+.play:after{
+	content: url("wantToPlay.png");
+	margin-left: 5px;
+}
+
+.card::after{
+	content: url('card.png');
+	margin-left: 5px;
+}
+
+.bad {
+	color: #EE204D;
+	text-decoration: line-through;
+	display: none;
+}
+
+.watching{
+	color: #3271E5;
+}
+
+.watching:after{
+	content: url('process.png');
+	padding-left: 5px;
+}
+
+#a{
+	border-bottom: 5px solid #0B79D0;
+	color: #0B79D0;
+}
+#b{
+	border-bottom: 5px solid #11C46F;
+	color: #11C46F;
+}
